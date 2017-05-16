@@ -1,0 +1,78 @@
+//|av_header
+
+$$.require([
+
+],function(){
+  //alert('en header_');                       //                      //
+  $.add={
+    tag:'div'
+    ,id:'header_'
+    ,position:'absolute'
+    ,width:['%',100]
+    ,height:['%',100]
+    ,backgroundColor:[250,250,250]
+    ,display:'grid'
+    ,gridTemplateRows:[['%',100]]
+    ,gridTemplateColumns:[250,'fill']
+    ,gridTemplateAreas:[
+      ['logo','usuario']
+    ]
+    ,children:[
+      {
+        tag:'div'
+        ,id:'logo2'
+        ,gridArea:'logo'
+        ,src:'logo.png'
+        ,display:'flex'
+        ,flexDirection:'row'
+        ,justifyContent:'flex-start'
+        ,alignItems:'center'
+        ,children:[
+          {
+            tag:'img'
+            ,id:'logo_img'
+            ,src:'logo.png'
+            ,height:['%',100]
+          }
+          ,{
+            tag:'span'
+            ,id:'titu_av'
+            ,display:'inline-block'
+            ,alignContent:'center'
+            ,color:[250,250,250]
+            ,textContent:'Aula Virtual'
+          }
+        ]
+      }
+      ,{
+        tag:'div'
+        ,id:'usuario'
+        ,gridArea:'usuario'
+        ,display:'flex'
+        ,flexDirection:'row'
+        ,justifyContent:'flex-end'
+        ,alignItems:'stretch'
+
+        ,children:[
+          {
+            tag:'div'
+            ,id:'men'
+            ,textContent:'men'
+          }
+          ,{
+            tag:'div'
+            ,id:'confi'
+            ,textContent:'perf'
+          }
+          ,{
+            tag:'div'
+            ,id:'user'
+            ,textContent:'usuario'
+          }
+
+        ]
+      }
+    ]
+  }
+}
+)

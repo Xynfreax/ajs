@@ -1,0 +1,176 @@
+<!--|index_principal.html-->
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">    <!--<style>-->
+
+    <style type="text/css" id="principal_style">
+
+    body{
+      background-color: white;
+      /*color:white;*/
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      /*overflow: hidden;*/
+    }
+          div { /*background-color: white;*/
+            box-sizing: border-box !important;
+            border:solid 1px black;
+          }
+    </style>
+    <script async="false" defer type="text/javascript">
+
+      /*var a=document.getElementsByTagName('style')[0].parentNode;
+      console.log('----------');
+      console.log(a);
+      */
+        //--resi(d);
+    </script>
+      <script async="false" defer src="loader_js.js"></script>
+      <script async="false" defer src="config_dependencies.js"></script>
+
+    </head>
+    <body id="body_">
+
+<!--<script>
+if(window.location.href!=='http://ust.edu.pe/'){
+  // fade out
+
+  function fadeOut(el,callback){
+    el.style.opacity = 1;
+
+    (function fade() {
+      if ((el.style.opacity -= .1) < 0) {
+        el.style.display = "none";
+      } else {
+        requestAnimationFrame(fade);
+      }
+    })();
+    callback();
+  }
+
+  // fade in
+
+  function fadeIn3(el,i) {
+
+          var go = function(i) {
+              setTimeout( function(){ seto(el,i); } , i * 1000);
+          };
+          for ( i = 0 ; i<=1 ; i = i + 0.01){go(i);}
+      }
+
+      function seto(el,i)
+      {
+          el.style.opacity = i;
+      }
+
+  function fadeIn2(el,callback) {
+    el.style.opacity = 0;
+
+
+    var tick = function() {
+      el.style.opacity = +el.style.opacity + 0.05;
+
+
+      if (+el.style.opacity < 1) {
+        (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick,25)
+      }else{
+        callback();
+      }
+    };
+
+    tick();
+  }
+
+  function fadeIn(el, display,callback){
+    el.style.opacity = 0;
+    el.style.display = display || "block";
+
+    (function fade() {
+      var val = parseFloat(el.style.opacity);
+      if (!((val += .1) > 1)) {
+        el.style.opacity = val;
+        requestAnimationFrame(fade);
+      }
+    })();
+    callback();
+  }
+    function salir_popup(e){
+      //alert('clicked');
+      var body__=document.body;
+      var container_=document.getElementById('container_')
+      fadeOut(container_,function(){body__.removeChild(container_);});
+      //--body__.removeChild(container_);
+    };
+      var body_=document.body;
+      var container_=document.createElement('div');
+      container_.style.position='fixed';
+      container_.style.zIndex=99999;
+      container_.style.width='100%';
+      container_.style.height='100%';
+      container_.style.left='0px';
+      container_.style.top='0px';
+      container_.style.backgroundColor='rgba(0,0,0,0.6)';
+      container_.id='container_';
+      container_.title='Cerrar';
+      container_.style.cursor='pointer';
+
+      var modal=document.createElement('div');
+      modal.style['position']='absolute';
+      modal.style['width']='90%';
+      modal.style['height']='90%';
+      modal.style.left='5%';
+      modal.style.top='5%';
+      modal.style['border']='solid 2px white';
+      var close_button_=document.createElement('div');
+      close_button_.textContent='X';
+      close_button_.style.position='absolute';
+      close_button_.style.width='20px';
+      close_button_.style.height='20px';
+      close_button_.style.borderRadius='12px';
+      close_button_.style.border='3px solid white';
+      close_button_.style.backgroundColor='#666666';
+      close_button_.style.textAlign='center';
+      close_button_.style.fontSize='15px';
+      close_button_.fontFamily='Arial,Helvetica';
+      close_button_.style.color='white';
+      close_button_.style.right='-10px';
+      close_button_.style.top='-10px';
+      close_button_.style.cursor='pointer';
+      close_button_.title='Cerrar';
+
+      close_button_.addEventListener('click',salir_popup,false);
+      modal.appendChild(close_button_);
+      var youtube_ifr=document.createElement('iframe');
+      youtube_ifr.backgroundColor='black';
+      youtube_ifr.width='100%';
+      youtube_ifr.height='100%';
+      youtube_ifr.src='https://www.youtube.com/embed/baBZ_Td-7-g?rel=0&autoplay=1';///&vq=medium ';
+      youtube_ifr.frameborder=0;
+      youtube_ifr.allowfullscreen=1;
+
+      modal.appendChild(youtube_ifr);
+      container_.appendChild(modal);
+      container_.addEventListener('click',salir_popup,false);
+
+      container_.style.opacity='0';
+
+      //container_.style.transition="all 5s";
+      body_.appendChild(container_);
+      //container_.style.opacity=1;
+      //--fadeIn(container_,'block',function(){});
+      fadeIn3(container_,0);
+      setTimeout(salir_popup, 50000);
+
+}
+
+
+
+</script>-->
+    </body>
+        <!--<script src="loader_scripts.js"></script>-->
+
+<!--    </head>-->
+</html>
